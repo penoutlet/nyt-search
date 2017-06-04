@@ -1,7 +1,7 @@
 
 
 // xhr.setRequestHeader('Authorization', null);
-xhr.setRequestHeader('Authorization', ' ');
+// xhr.setRequestHeader('Authorization', ' ');
 $(document).ready(function(){
 
 handleclick = function (){

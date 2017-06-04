@@ -3,7 +3,7 @@ var React = require('react');
 var search = React.createClass ({
 	
 	render: function(){
-
+	return (
 		<div className= "Search">
 			<div class="row">
 				  <div class="col-lg-6">
@@ -22,7 +22,7 @@ var search = React.createClass ({
 				  </div>
 			</div>
 		</div> 
-
+		);
 
 		}
 	});

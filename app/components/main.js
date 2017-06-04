@@ -2,8 +2,8 @@
 
 var React = require('react');
 
-var saved = require('./saved');
-var search = require('./search');
+var Saved = require('./saved');
+var Search = require('./search');
 
 var main = React.createClass({ 
 	// handleclick: function (){
@@ -16,11 +16,11 @@ var main = React.createClass({
 	// 		resultsDiv.append(response);
 	// 		getElementById("display").append(resultsDiv);
 	// 	}).fail(function(err) {
-	// 		throw err;
-	// 	});
 
 	// },
 
+	// 		throw err;
+	// 	});
 	render: function () {
 
 // handleclick = {this.handleclick}
@@ -28,11 +28,11 @@ var main = React.createClass({
 		
 		<div className = "container1">
 			<div className="row">
-
-			<search  />
+			<h2> yo </h2>
+			<Search  />
 		</div>
 			<div className = "row">
-			<saved />
+			<Saved />
 		</div>
 	</div>	
 		);

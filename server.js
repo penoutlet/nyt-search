@@ -7,7 +7,7 @@ var Article = require("./models/Article");
 var exphbs = require("express-handlebars");
 var ReactEngine = require('express-react-engine');
 var axios = require("axios"); 
-
+var PORT = process.env.PORT || 3000;
 // Set mongoose to leverage built in JavaScript ES6 Promises
 mongoose.Promise = Promise;
 
@@ -34,7 +34,7 @@ app.use(express.static("./public"));
 
 
 // Database configuration with mongoose
-mongoose.connect("mongodb://localhost/nyt-react");
+mongoose.connect("mongodb://heroku_xp1g0q24:eedr6i7ec0lvoq6uhs4lvj19t9@ds163301.mlab.com:63301/heroku_xp1g0q24");
 var db = mongoose.connection;
 
 // Show any mongoose errors
@@ -89,11 +89,13 @@ app.delete("api/saved/delete/:id",function (req,res){
 app.get('/', function(req, res) {
 		
 		 res.sendFile(__dirname + '/public/index.html');
+		 console.log('working');
+
 });	 
 
  
 
 // Listen on port 3000
-app.listen(3000, function() {
+app.listen(PORT, function() {
   console.log("App running on port 3000!");
 });
