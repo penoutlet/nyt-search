@@ -10,7 +10,7 @@ var saved = React.createClass({
 						
 						<div className= "col-md-6">
 						
-							<div class="panel panel-primary">Saved
+							<div className="panel panel-primary">Saved
 					
 						</div>
 

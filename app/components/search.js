@@ -5,21 +5,35 @@ var search = React.createClass ({
 	render: function(){
 	return (
 		<div className= "Search">
-			<div class="row">
-				  <div class="col-lg-6">
-				    <div class="input-group">
-				      <span class="input-group-btn">
-				        <button class="btn btn-default" onClick = {this.handleclick} type="button">Go!</button>
+			<div className="row">
+				  <div className="col-lg-6">
+				    <div className="input-group">
+				      <span className="input-group-btn">
+				        <button className="btn btn-default" onClick = {this.props.handleclick} type="button">Go!</button>
 				      </span>
 				    </div>
 				</div>
-				  <div class="col-lg-6">
-				    <div class="input-group" id = "display">
-				        <button class="btn btn-default" type="button">Save!</button>
+				  <div className="col-lg-6">
+				    <div className="input-group" id = "saved-display">
+				        <button className="btn btn-default" type="button">Save!</button>
 				      
 				   
 				    </div>
 				  </div>
+			</div>
+			<div className= "search">
+					
+					<div className="row">
+						
+						<div className= "col-md-6">
+						
+							<div id = "search-display" className="panel panel-primary">Search
+					
+						</div>
+
+					</div>	
+
+				</div>
 			</div>
 		</div> 
 		);
